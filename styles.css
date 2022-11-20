@@ -46,3 +46,17 @@ section {
 .toggleCard {
     transform: rotateY(180deg);
 }
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(119, 116, 116);
+}

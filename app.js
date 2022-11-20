@@ -1,6 +1,10 @@
 const section = document.querySelector("section");
 const playerLives = document.querySelector("span");
 let Lives = 6;
+const restartButton = document.getElementById("restart")
+restartButton.addEventListener("click", () => {
+    restart("Restarting!");
+});
 
 playerLives.textContent = Lives;
 

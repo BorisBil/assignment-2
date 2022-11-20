@@ -20,20 +20,21 @@ const getImages = () => [
 ];
 
 const shuffle = () => {
-    const cardData = getData();
+    const cardData = getImages();
     cardData.sort(() => Math.random() - 0.5);
     return cardData;
 };
 
 const generator = () => {
     const cardData = shuffle();
-    cardData.forEach(item => {
+    cardData.forEach((item) => {
         const card = document.createElement("div");
         const face = document.createElement("img");
         const back = document.createElement("div");
         card.classList = "card";
         face.classList = "face";
         back.classList = "back";
+        face.src = item.imgSrc;
         section.appendChild(card);
         card.appendChild(face);
         card.appendChild(back);
